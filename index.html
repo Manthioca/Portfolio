@@ -4,40 +4,37 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas | Desenvolvedor Full Stack & Software Engineer</title>
+    <title>Lucas // Full Stack & Software Architecture</title>
 
-    <!-- Google Fonts: Inter & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Ícones Lucide (CDN leve) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="stylesheet" href="styles_home/styles_home.css" />
 </head>
 
 <body>
-    <!-- Efeito de brilho de fundo -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
+    <!-- Fundo Neural Interativo -->
+    <canvas id="neuralCanvas"></canvas>
+    <div class="noise-overlay"></div>
 
-    <!-- Navbar -->
+    <!-- Navbar Flutuante -->
     <header class="navbar">
-        <div class="container nav-content">
+        <div class="nav-pill">
             <a href="#inicio" class="logo-link">
                 <img src="img/logo1.svg" alt="Logo Lucas" class="logo-img" />
-                <span class="logo-text">Lucas<span class="accent">.dev</span></span>
+                <span class="logo-text">LUCAS<span class="accent">_DEV</span></span>
             </a>
 
             <nav class="nav-links" id="navLinks">
-                <a href="#sobre">Sobre</a>
-                <a href="#stack">Stack</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato" class="btn-nav">Contato</a>
+                <a href="#bento">Arquitetura</a>
+                <a href="#terminal">Terminal</a>
+                <a href="#projetos">Sistemas</a>
+                <a href="#contato" class="nav-cta">Iniciar Contato</a>
             </nav>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
         <i data-lucide="menu"></i>
       </button>
         </div>
@@ -46,172 +43,245 @@
     <main>
         <!-- Hero Section -->
         <section id="inicio" class="hero container">
-            <div class="hero-badge">
-                <span class="status-dot"></span> Disponível para projetos e oportunidades Full Stack
+            <div class="telemetry-bar">
+                <span class="pulse-dot"></span>
+                <span>SYS.STATUS: ONLINE // FULL STACK & LOW-LEVEL ENGINEERING</span>
             </div>
+
             <h1 class="hero-title">
-                Construindo sistemas sólidos, <br />
-                <span class="gradient-text">automação & interfaces modernas.</span>
+                Engenharia de Software <br />
+                <span class="glitch-text" data-text="além da superfície.">além da superfície.</span>
             </h1>
+
             <p class="hero-subtitle">
-                Estudante de Engenharia de Software com foco em desenvolvimento Full Stack, arquitetura de sistemas, automação em Python e soluções web de alta performance.
+                Desenvolvimento Full Stack, automação de processos críticos, arquitetura de APIs e sistemas de alta performance construídos desde os fundamentos.
             </p>
+
             <div class="hero-actions">
                 <a href="#projetos" class="btn btn-primary">
-          Ver Projetos <i data-lucide="arrow-down-right"></i>
-        </a>
-                <a href="#contato" class="btn btn-secondary">
-          Entrar em Contato
-        </a>
+                    <i data-lucide="cpu"></i> Explorar Sistemas
+                </a>
+                <a href="#terminal" class="btn btn-glass">
+                    <i data-lucide="terminal"></i> Abrir Terminal
+                </a>
+            </div>
+
+            <!-- Métricas / Arquitetura Rápida -->
+            <div class="hero-metrics">
+                <div class="metric-item">
+                    <span class="metric-value">Full Stack</span>
+                    <span class="metric-label">Python • React • JS • SQL</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                    <span class="metric-value">Sistemas & Redes</span>
+                    <span class="metric-label">C/C++ • Linux • TCP/IP • APIs</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                    <span class="metric-value">Automação</span>
+                    <span class="metric-label">Bots • Visão Computacional • PDF</span>
+                </div>
             </div>
         </section>
 
-        <!-- Sobre / Diferenciais -->
-        <section id="sobre" class="section container">
+        <!-- Bento Grid de Engenharia -->
+        <section id="bento" class="section container">
             <div class="section-header">
-                <span class="section-tag">// 01. PERFIL</span>
-                <h2>Engenharia orientada a resultados</h2>
+                <span class="section-tag">01 // CORE_CAPABILITIES</span>
+                <h2>Arquitetura & Stack Técnica</h2>
             </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <i data-lucide="cpu" class="card-icon"></i>
-                    <h3>Visão Sistêmica</h3>
-                    <p>Experiência prática com lógica de negócios, controle operacional e desenvolvimento de ferramentas que resolvem gargalos reais.</p>
+
+            <div class="bento-grid">
+                <!-- Card Grande 1 -->
+                <div class="bento-card bento-span-2 spotlight-card tilt-card">
+                    <div class="card-header">
+                        <i data-lucide="layers" class="accent-icon"></i>
+                        <span class="mono-badge">FULL_STACK_ENG</span>
+                    </div>
+                    <h3>Sistemas Web & APIs de Alta Disponibilidade</h3>
+                    <p>
+                        Construção ponta a ponta: modelagem de bancos relacionais e NoSQL, back-ends robustos em Python/Flask e Java, integrados a interfaces reativas e responsivas.
+                    </p>
+                    <div class="tech-pills">
+                        <span>Python</span><span>Flask</span><span>JavaScript ES6+</span>
+                        <span>React</span><span>SQL / SQLite</span><span>MongoDB</span><span>REST API</span>
+                    </div>
                 </div>
-                <div class="about-card">
-                    <i data-lucide="layers" class="card-icon"></i>
-                    <h3>Full Stack & Automação</h3>
-                    <p>Do back-end estruturado com APIs REST e bancos relacionais/NoSQL até interfaces responsivas e scripts de automação.</p>
+
+                <!-- Card 2 -->
+                <div class="bento-card spotlight-card tilt-card">
+                    <div class="card-header">
+                        <i data-lucide="cpu" class="accent-icon"></i>
+                        <span class="mono-badge">LOW_LEVEL</span>
+                    </div>
+                    <h3>Performance & Baixo Nível</h3>
+                    <p>
+                        Domínio de memória, gerenciamento de redes, diagnósticos de hardware e administração de ambientes Linux e Windows.
+                    </p>
+                    <div class="tech-pills">
+                        <span>C / C++</span><span>Java</span><span>Linux</span><span>Redes TCP/IP</span>
+                    </div>
                 </div>
-                <div class="about-card">
-                    <i data-lucide="terminal" class="card-icon"></i>
-                    <h3>Código Limpo & Baixo Nível</h3>
-                    <p>Base sólida em algoritmos, redes, administração Linux/Windows e otimização de performance.</p>
+
+                <!-- Card 3 -->
+                <div class="bento-card spotlight-card tilt-card">
+                    <div class="card-header">
+                        <i data-lucide="bot" class="accent-icon"></i>
+                        <span class="mono-badge">AUTOMATION</span>
+                    </div>
+                    <h3>Automação & Ferramentas Desktop</h3>
+                    <p>
+                        Eliminação de gargalos operacionais através de scripts inteligentes, geração dinâmica de documentos e análise em tempo real.
+                    </p>
+                    <div class="tech-pills">
+                        <span>OpenCV</span><span>CustomTkinter</span><span>ReportLab / FPDF</span>
+                    </div>
+                </div>
+
+                <!-- Card Grande 4: Terminal Interativo -->
+                <div id="terminal" class="bento-card bento-span-2 terminal-card">
+                    <div class="terminal-topbar">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">lucas@workstation: ~/portfolio</span>
+                        <span class="terminal-hint">interativo</span>
+                    </div>
+
+                    <div class="terminal-body" id="terminalOutput">
+                        <div class="term-line"><span class="term-prompt">lucas@dev:~$</span> <span class="term-cmd">neofetch --summary</span></div>
+                        <div class="term-response">
+                            <strong>Engenheiro de Software em formação</strong> | Foco em Sistemas, Automação & Web.<br> Digite <span class="term-highlight">help</span> abaixo ou clique em um comando rápido:
+                        </div>
+                    </div>
+
+                    <div class="terminal-shortcuts">
+                        <button type="button" data-cmd="stack">stack</button>
+                        <button type="button" data-cmd="projetos">projetos</button>
+                        <button type="button" data-cmd="diferencial">diferencial</button>
+                        <button type="button" data-cmd="contato">contato</button>
+                        <button type="button" data-cmd="clear">clear</button>
+                    </div>
+
+                    <form class="terminal-input-row" id="terminalForm">
+                        <span class="term-prompt">lucas@dev:~$</span>
+                        <input type="text" id="terminalInput" placeholder="Digite 'help' e pressione Enter..." autocomplete="off" />
+                    </form>
                 </div>
             </div>
         </section>
 
-        <!-- Tech Stack -->
-        <section id="stack" class="section container">
-            <div class="section-header">
-                <span class="section-tag">// 02. TECNOLOGIAS</span>
-                <h2>Stack & Ferramentas</h2>
-            </div>
-            <div class="stack-container">
-                <div class="stack-group">
-                    <h4>Front-end</h4>
-                    <div class="tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3 / Modern UI</span>
-                        <span class="tag">JavaScript (ES6+)</span>
-                        <span class="tag">React</span>
-                    </div>
-                </div>
-                <div class="stack-group">
-                    <h4>Back-end & Linguagens</h4>
-                    <div class="tags">
-                        <span class="tag">Python (Flask / Automação)</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">C / C++</span>
-                        <span class="tag">REST APIs</span>
-                    </div>
-                </div>
-                <div class="stack-group">
-                    <h4>Dados & Infraestrutura</h4>
-                    <div class="tags">
-                        <span class="tag">SQL / SQLite</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Redes & TCP/IP</span>
-                        <span class="tag">Git / Linux / Windows</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projetos -->
+        <!-- Projetos em Destaque -->
         <section id="projetos" class="section container">
             <div class="section-header">
-                <span class="section-tag">// 03. PORTFÓLIO</span>
-                <h2>Projetos em Destaque</h2>
+                <span class="section-tag">02 // DEPLOYED_SYSTEMS</span>
+                <h2>Projetos em Produção</h2>
             </div>
 
             <div class="projects-grid">
-                <!-- Projeto 1: Nutribom System -->
-                <article class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="img/nutribomSistem.PNG" alt="Sistema de Orçamentos Nutribom" loading="lazy" />
+                <!-- Projeto 1 -->
+                <article class="project-card spotlight-card tilt-card">
+                    <div class="project-media" onclick="openModal('img/nutribomSistem.PNG', 'Nutribom System', 'Sistema web completo de gestão comercial, cotações e geração automatizada de orçamentos e faturas em PDF com Python, Flask e FPDF.')">
+                        <img src="img/nutribomSistem.PNG" alt="Nutribom System" loading="lazy" />
+                        <div class="media-overlay">
+                            <span><i data-lucide="maximize-2"></i> Inspecionar Interface</span>
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>PDF / Gestão</span>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-id">SYS_01</span>
+                            <div class="project-tags">
+                                <span>Python</span><span>Flask</span><span>FPDF</span>
+                            </div>
                         </div>
                         <h3>Nutribom System</h3>
-                        <p>Sistema web completo para gestão de orçamentos, pedidos e emissão automatizada de documentos comerciais em PDF.</p>
-                        <div class="project-links">
-                            <a href="#" class="link-btn"><i data-lucide="external-link"></i> Detalhes</a>
-                            <a href="#" class="link-btn"><i data-lucide="github"></i> Código</a>
+                        <p>Plataforma web de gestão comercial para emissão automatizada de orçamentos, controle de itens e geração instantânea de PDFs corporativos.</p>
+                        <div class="project-footer">
+                            <button class="btn-link" onclick="openModal('img/nutribomSistem.PNG', 'Nutribom System', 'Sistema web completo de gestão comercial, cotações e geração automatizada de orçamentos e faturas em PDF com Python, Flask e FPDF.')">
+                <i data-lucide="eye"></i> Preview
+              </button>
+                            <a href="#" class="btn-link"><i data-lucide="github"></i> Repositório</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Projeto 2: Network Tool -->
-                <article class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="img/network.PNG" alt="Gerenciador e Monitor de Rede" loading="lazy" />
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Redes</span>
-                            <span>Desktop App</span>
-                        </div>
-                        <h3>Network Manager</h3>
-                        <p>Aplicação desktop para diagnóstico, monitoramento e gerenciamento rápido de interfaces de rede e conectividade.</p>
-                        <div class="project-links">
-                            <a href="#" class="link-btn"><i data-lucide="external-link"></i> Detalhes</a>
-                            <a href="#" class="link-btn"><i data-lucide="github"></i> Código</a>
+                <!-- Projeto 2 -->
+                <article class="project-card spotlight-card tilt-card">
+                    <div class="project-media" onclick="openModal('img/network.PNG', 'Network Interface Manager', 'Ferramenta desktop em Python para diagnóstico de conectividade, gerenciamento de adaptadores de rede e monitoramento de latência.')">
+                        <img src="img/network.PNG" alt="Network Manager" loading="lazy" />
+                        <div class="media-overlay">
+                            <span><i data-lucide="maximize-2"></i> Inspecionar Interface</span>
                         </div>
                     </div>
-                </article>
-
-                <!-- Projeto 3: Vini Site -->
-                <article class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="img/Vinisite.PNG" alt="Projeto Web Vini Site" loading="lazy" />
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-id">SYS_02</span>
+                            <div class="project-tags">
+                                <span>Python</span><span>Redes</span><span>Desktop UI</span>
+                            </div>
                         </div>
-                        <h3>Landing Page Profissional</h3>
-                        <p>Website institucional responsivo com foco em conversão, identidade visual moderna e carregamento otimizado.</p>
-                        <div class="project-links">
-                            <a href="#" class="link-btn"><i data-lucide="external-link"></i> Demo</a>
-                            <a href="#" class="link-btn"><i data-lucide="github"></i> Código</a>
+                        <h3>Network Interface Manager</h3>
+                        <p>Utilitário desktop de engenharia para administração de interfaces de rede, testes de conectividade e automação de rotinas de infraestrutura.</p>
+                        <div class="project-footer">
+                            <button class="btn-link" onclick="openModal('img/network.PNG', 'Network Interface Manager', 'Ferramenta desktop em Python para diagnóstico de conectividade, gerenciamento de adaptadores de rede e monitoramento de latência.')">
+                <i data-lucide="eye"></i> Preview
+              </button>
+                            <a href="#" class="btn-link"><i data-lucide="github"></i> Repositório</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Projeto 4: Juli Site -->
-                <article class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="img/julisite.PNG" alt="Projeto Web Juli Site" loading="lazy" />
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span>UI/UX</span>
-                            <span>Front-end</span>
-                            <span>Responsivo</span>
+                <!-- Projeto 3 -->
+                <article class="project-card spotlight-card tilt-card">
+                    <div class="project-media" onclick="openModal('img/Vinisite.PNG', 'Landing Page Institucional', 'Interface web moderna construída com foco em hierarquia visual, responsividade fluida e performance de carregamento.')">
+                        <img src="img/Vinisite.PNG" alt="Projeto Web 01" loading="lazy" />
+                        <div class="media-overlay">
+                            <span><i data-lucide="maximize-2"></i> Inspecionar Interface</span>
                         </div>
-                        <h3>Web Portfolio & Vitrine</h3>
-                        <p>Interface web personalizada desenvolvida com layout adaptável para dispositivos móveis e desktop.</p>
-                        <div class="project-links">
-                            <a href="#" class="link-btn"><i data-lucide="external-link"></i> Demo</a>
-                            <a href="#" class="link-btn"><i data-lucide="github"></i> Código</a>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-id">WEB_03</span>
+                            <div class="project-tags">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                        <h3>Landing Page Comercial</h3>
+                        <p>Website responsivo de alta conversão com arquitetura front-end limpa, animações fluidas e otimização para dispositivos móveis.</p>
+                        <div class="project-footer">
+                            <button class="btn-link" onclick="openModal('img/Vinisite.PNG', 'Landing Page Comercial', 'Interface web moderna construída com foco em hierarquia visual, responsividade fluida e performance de carregamento.')">
+                <i data-lucide="eye"></i> Preview
+              </button>
+                            <a href="#" class="btn-link"><i data-lucide="github"></i> Repositório</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 4 -->
+                <article class="project-card spotlight-card tilt-card">
+                    <div class="project-media" onclick="openModal('img/julisite.PNG', 'Web Showcase & UI Design', 'Projeto front-end focado em experiência do usuário, tipografia moderna e adaptação multi-tela.')">
+                        <img src="img/julisite.PNG" alt="Projeto Web 02" loading="lazy" />
+                        <div class="media-overlay">
+                            <span><i data-lucide="maximize-2"></i> Inspecionar Interface</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-id">WEB_04</span>
+                            <div class="project-tags">
+                                <span>UI/UX</span><span>Responsive</span><span>Front-End</span>
+                            </div>
+                        </div>
+                        <h3>Web Showcase & Vitrine Digital</h3>
+                        <p>Interface web personalizada desenvolvida com grid adaptável, foco em identidade visual e navegação intuitiva.</p>
+                        <div class="project-footer">
+                            <button class="btn-link" onclick="openModal('img/julisite.PNG', 'Web Showcase & Vitrine Digital', 'Projeto front-end focado em experiência do usuário, tipografia moderna e adaptação multi-tela.')">
+                <i data-lucide="eye"></i> Preview
+              </button>
+                            <a href="#" class="btn-link"><i data-lucide="github"></i> Repositório</a>
                         </div>
                     </div>
                 </article>
@@ -220,18 +290,18 @@
 
         <!-- Contato -->
         <section id="contato" class="section container">
-            <div class="contact-box">
-                <span class="section-tag">// 04. VAMOS CONVERSAR</span>
-                <h2>Pronto para tirar seu projeto do papel?</h2>
-                <p>Entre em contato para oportunidades de desenvolvimento, freelas ou parcerias técnicas.</p>
-                <div class="contact-actions">
+            <div class="cta-panel spotlight-card">
+                <span class="section-tag">03 // ESTABLISH_CONNECTION</span>
+                <h2>Vamos construir algo de alto impacto.</h2>
+                <p>Disponível para oportunidades Full Stack, desenvolvimento de sistemas sob medida e automação.</p>
+                <div class="cta-buttons">
                     <a href="mailto:seuemail@exemplo.com" class="btn btn-primary">
                         <i data-lucide="mail"></i> Enviar E-mail
                     </a>
-                    <a href="https://github.com/Manthioca" target="_blank" rel="noopener" class="btn btn-secondary">
+                    <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-glass">
                         <i data-lucide="github"></i> GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/lucas-s-r-queiroz-8851b4338/" target="_blank" rel="noopener" class="btn btn-secondary">
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener" class="btn btn-glass">
                         <i data-lucide="linkedin"></i> LinkedIn
                     </a>
                 </div>
@@ -240,41 +310,200 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-content">
-            <p>© 2026 Lucas. Desenvolvido com foco em performance e código limpo.</p>
+        <div class="container">
+            <p>ENGINEERED BY <span class="accent">LUCAS</span> // 2026 • ALL SYSTEMS OPERATIONAL</p>
         </div>
     </footer>
 
+    <!-- Modal Lightbox de Inspeção -->
+    <div class="modal-backdrop" id="projectModal" onclick="closeModal(event)">
+        <div class="modal-window">
+            <button class="modal-close" onclick="forceCloseModal()" aria-label="Fechar">
+        <i data-lucide="x"></i>
+      </button>
+            <img id="modalImg" src="" alt="Preview do Projeto" />
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Inicializa ícones Lucide
         lucide.createIcons();
 
-        // Menu mobile
+        // 1. Menu Mobile
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('active')));
+
+        // 2. Canvas Neural Interativo
+        const canvas = document.getElementById('neuralCanvas');
+        const ctx = canvas.getContext('2d');
+        let width, height, particles;
+        const mouse = {
+            x: null,
+            y: null,
+            radius: 140
+        };
+
+        window.addEventListener('mousemove', e => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
         });
 
-        // Fecha menu ao clicar em um link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => navLinks.classList.remove('active'));
-        });
+        function initCanvas() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            const count = Math.min(Math.floor((width * height) / 16000), 85);
+            particles = Array.from({
+                length: count
+            }, () => ({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                vx: (Math.random() - 0.5) * 0.45,
+                vy: (Math.random() - 0.5) * 0.45,
+                size: Math.random() * 1.8 + 0.6
+            }));
+        }
 
-        // Animação suave de entrada ao rolar (Intersection Observer)
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        function animateCanvas() {
+            ctx.clearRect(0, 0, width, height);
+            for (let i = 0; i < particles.length; i++) {
+                const p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0 || p.x > width) p.vx *= -1;
+                if (p.y < 0 || p.y > height) p.vy *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(56, 189, 248, 0.55)';
+                ctx.fill();
+
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                    if (dist < 120) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(56, 189, 248, ${0.15 * (1 - dist / 120)})`;
+                        ctx.lineWidth = 0.7;
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                }
+
+                if (mouse.x !== null) {
+                    const mDist = Math.hypot(p.x - mouse.x, p.y - mouse.y);
+                    if (mDist < mouse.radius) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(129, 140, 248, ${0.35 * (1 - mDist / mouse.radius)})`;
+                        ctx.lineWidth = 1;
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(mouse.x, mouse.y);
+                        ctx.stroke();
+                    }
+                }
+            }
+            requestAnimationFrame(animateCanvas);
+        }
+
+        window.addEventListener('resize', initCanvas);
+        initCanvas();
+        animateCanvas();
+
+        // 3. Spotlight Glow + Tilt 3D nos Cards
+        document.querySelectorAll('.spotlight-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+
+                if (card.classList.contains('tilt-card')) {
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = ((y - centerY) / centerY) * -4;
+                    const rotateY = ((x - centerX) / centerX) * 4;
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
                 }
             });
-        }, {
-            threshold: 0.1
+
+            card.addEventListener('mouseleave', () => {
+                if (card.classList.contains('tilt-card')) {
+                    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+                }
+            });
         });
 
-        document.querySelectorAll('.about-card, .stack-group, .project-card, .contact-box').forEach(el => {
-            el.classList.add('fade-up');
-            observer.observe(el);
+        // 4. Terminal Interativo
+        const terminalForm = document.getElementById('terminalForm');
+        const terminalInput = document.getElementById('terminalInput');
+        const terminalOutput = document.getElementById('terminalOutput');
+
+        const commands = {
+            help: 'Comandos disponíveis: <span class="term-highlight">stack</span>, <span class="term-highlight">projetos</span>, <span class="term-highlight">diferencial</span>, <span class="term-highlight">contato</span>, <span class="term-highlight">clear</span>',
+            stack: 'Front-end: HTML5, CSS3, JS (ES6+), React | Back-end: Python (Flask), Java, C/C++ | Dados & Infra: SQLite, MongoDB, Linux, Redes TCP/IP.',
+            projetos: '1. Nutribom System (Flask + PDF) | 2. Network Manager (Python Desktop) | 3. Landing Pages & UI Showcases.',
+            diferencial: 'Visão sistêmica de operações reais aliada à engenharia de software desde os fundamentos (baixo nível, redes e automação).',
+            contato: 'Use os botões na seção #contato abaixo ou envie um e-mail direto para iniciar uma conversa.'
+        };
+
+        function runCommand(rawCmd) {
+            const cmd = rawCmd.trim().toLowerCase();
+            if (!cmd) return;
+
+            if (cmd === 'clear') {
+                terminalOutput.innerHTML = '';
+                return;
+            }
+
+            const line = document.createElement('div');
+            line.className = 'term-line';
+            line.innerHTML = `<span class="term-prompt">lucas@dev:~$</span> <span class="term-cmd">${cmd}</span>`;
+            terminalOutput.appendChild(line);
+
+            const resp = document.createElement('div');
+            resp.className = 'term-response';
+            resp.innerHTML = commands[cmd] || `Comando não encontrado: '${cmd}'. Digite <span class="term-highlight">help</span>.`;
+            terminalOutput.appendChild(resp);
+
+            terminalOutput.scrollTop = terminalOutput.scrollHeight;
+        }
+
+        terminalForm.addEventListener('submit', e => {
+            e.preventDefault();
+            runCommand(terminalInput.value);
+            terminalInput.value = '';
+        });
+
+        document.querySelectorAll('.terminal-shortcuts button').forEach(btn => {
+            btn.addEventListener('click', () => runCommand(btn.dataset.cmd));
+        });
+
+        // 5. Modal Lightbox
+        const modal = document.getElementById('projectModal');
+
+        function openModal(src, title, desc) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDesc').textContent = desc;
+            modal.classList.add('open');
+        }
+
+        function forceCloseModal() {
+            modal.classList.remove('open');
+        }
+
+        function closeModal(e) {
+            if (e.target === modal) forceCloseModal();
+        }
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') forceCloseModal();
         });
     </script>
 </body>
